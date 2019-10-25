@@ -9,7 +9,7 @@ import java.util.List;
  * input ：len:n, range:[0,n-1]
  * output ：找出任意一个重复的数字
  */
-public class _3DupNum {
+public class _3_DupNum {
     public int dupNum(int[] arr) {
         return 0;
     }
@@ -58,7 +58,7 @@ public class _3DupNum {
         int[] arr = {2, 3, 1, 0, 2, 5, 3};
 //        int[] res = new _3().dupNumBySort(arr);
         List<Integer> res = new LinkedList<>();
-        new _3DupNum().dupNum(arr, res);
+        new _3_DupNum().dupNum(arr, res);
         for (int x : res) {
             System.out.println(x);
         }

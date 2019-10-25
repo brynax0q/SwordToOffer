@@ -9,7 +9,7 @@ package swordtooffer;
  * f(i) = max( f(i), f(j) * f(i-j) )  j 为分割位置
  * f(n) = f(i) * f(n-i)
  */
-    public class _14MaxRes {
+    public class _14_MaxRes {
     // 贪心
     public int greedy(int n) {
         if (n < 2) {
@@ -81,6 +81,6 @@ package swordtooffer;
     }
 
     public static void main(String[] args) {
-        System.out.println(new _14MaxRes().greedy(8));
+        System.out.println(new _14_MaxRes().greedy(8));
     }
 }

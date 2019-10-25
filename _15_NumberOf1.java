@@ -3,7 +3,7 @@ package swordtooffer;
 /**
  * 1的个数
  */
-public class _15NumberOf1 {
+public class _15_NumberOf1 {
     public int numberOf1(int n) {
         int flag = 1;
         int count = 0;
@@ -34,6 +34,6 @@ public class _15NumberOf1 {
     }
 
     public static void main(String[] args) {
-        System.out.println(new _15NumberOf1().numberOf1_(Integer.MIN_VALUE));
+        System.out.println(new _15_NumberOf1().numberOf1_(Integer.MIN_VALUE));
     }
 }

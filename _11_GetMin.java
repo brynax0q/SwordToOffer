@@ -5,7 +5,7 @@ package swordtooffer;
  * input：递增排序的数组的一个旋转（数组最开始的若干个元素搬到数组的末尾）
  * output：输出旋转数字的最小元素
  */
-public class _11GetMin {
+public class _11_GetMin {
     public int getMin(int[] arr) {
         int l = 0;
         int r = arr.length - 1;
@@ -49,6 +49,6 @@ public class _11GetMin {
         int[] arr1 = {1, 2, 3, 4, 5};
         int[] arr2 = {0, 1, 1, 1, 1};
         int[] arr3 = {1, 0, 1, 1, 1};
-        System.out.println(new _11GetMin().getMin(arr3));
+        System.out.println(new _11_GetMin().getMin(arr3));
     }
 }

@@ -5,7 +5,7 @@ package swordtooffer;
  * input：二维矩阵和字符串
  * output：矩阵中是否存在这个字符串
  */
-public class _12HasPath {
+public class _12_HasPath {
 
     private boolean hasPath(char[][] arr, String str) {
 
@@ -57,7 +57,7 @@ public class _12HasPath {
                 {'c', 'f', 'c', 's'},
                 {'j', 'd', 'e', 'h'}
         };
-        System.out.println(new _12HasPath().hasPath(chs, "a"));
+        System.out.println(new _12_HasPath().hasPath(chs, "a"));
 
     }
 }

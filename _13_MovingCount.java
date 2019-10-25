@@ -5,7 +5,7 @@ package swordtooffer;
  * input: 二维矩阵
  * output：机器人能够到达的格子
  */
-public class _13MovingCount {
+public class _13_MovingCount {
 
     private boolean[][] isVisited;
 
@@ -64,7 +64,7 @@ public class _13MovingCount {
         int[][] arr = {
                 {1}
         };
-        System.out.println(new _13MovingCount().movingCount(arr, -1));
+        System.out.println(new _13_MovingCount().movingCount(arr, -1));
     }
 
 }

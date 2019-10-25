@@ -2,7 +2,7 @@ package swordtooffer;
 
 import java.util.HashMap;
 
-public class _7ConstructTree {
+public class _7_ConstructTree {
     public int pre_idx = 0;
     public TreeNode construct(int[] preOrder, int[] inOrder) {
         if (preOrder == null || inOrder == null) {
@@ -38,7 +38,7 @@ public class _7ConstructTree {
         int[] preOrder = {1, 2, 4, 7, 3, 5, 6, 8};
         int[] inOrder = {4, 7, 2, 1, 5, 3, 8, 6};
 
-        TreeNode tree = new _7ConstructTree().construct(preOrder, inOrder);
+        TreeNode tree = new _7_ConstructTree().construct(preOrder, inOrder);
         System.out.println();
 
     }

@@ -6,7 +6,7 @@ package swordtooffer;
  * output: 将其中的空格全部替换为%20
  * 首先统计空格个数，从后往前复制
  */
-public class _5ReplaceBlank {
+public class _5_ReplaceBlank {
     public char[] replaceBlank(char[] s) {
         if (s == null) {
             return new char[]{};
@@ -42,7 +42,7 @@ public class _5ReplaceBlank {
 
     public static void main(String[] args) {
         char[] s = {' ', 'a', 'b', ' ',' ', 'c', ' ', 'd', ' '};
-        char[] res = new _5ReplaceBlank().replaceBlank(s);
+        char[] res = new _5_ReplaceBlank().replaceBlank(s);
         System.out.println(res);
 
     }

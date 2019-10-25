@@ -2,7 +2,7 @@ package swordtooffer;
 
 import java.util.Stack;
 
-public class _6PrintListReversing {
+public class _6_PrintListReversing {
     public static void printListReversingByStack(Node node) {
         Stack<Node> stack = new Stack<>();
         Node p = node;

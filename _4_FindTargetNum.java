@@ -7,7 +7,7 @@ package swordtooffer;
  * key： 从右上角或者左下角开始寻找，可以不同的情况缩小查找的范围
  * test： max、min、between in arr , > max, < min, between not in arr , null
  */
-public class _4FindTargetNum {
+public class _4_FindTargetNum {
     public boolean findTargetNum(int[][] arr, int target) {
         if (arr == null) {
             return false;
@@ -70,7 +70,7 @@ public class _4FindTargetNum {
                 {6, 8, 11, 15}
         };
         int[][] a = {{0}};
-        System.out.println(new _4FindTargetNum().findTargetNumFromLeftCorner(arr, 0));
+        System.out.println(new _4_FindTargetNum().findTargetNumFromLeftCorner(arr, 0));
 
     }
 }
