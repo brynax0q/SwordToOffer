@@ -5,6 +5,27 @@ package swordtooffer;
  * input：头指针和目标删除指针
  */
 public class _18_DelNode {
+    // 有序链表删除重复节点
+    public Node delDup(Node start) {
+        if (start == null || start.next == null) {
+            return start;
+        }
+        Node pPreNode = start;
+        Node pNode = start.next;
+        while (pNode != null) {
+            while (pNode!= null && pNode.value == pPreNode.value ) {
+                pNode = pNode.next;
+            }
+            pPreNode.next = pNode;
+            pPreNode = pNode;
+
+        }
+
+        return start;
+    }
+
+
+    // 删除指定节点
     public Node delNode(Node start, Node delNode) {
         if (start == null || delNode == null) {
             return null;
@@ -27,5 +48,4 @@ public class _18_DelNode {
         }
         return start;
     }
-    
 }
