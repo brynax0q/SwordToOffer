@@ -9,12 +9,13 @@ public class Node {
         next = null;
     }
 
-    public void addToTail(int value) {
+    public Node addToTail(int value) {
         Node p = this;
         while (p.next != null) {
             p = p.next;
         }
         p.next = new Node(value);
+        return this;
     }
 
     public Node removeNode(int value) {
