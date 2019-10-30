@@ -22,13 +22,5 @@ public class _25_MergeList {
         }
         return mergeHead;
     }
-
-    public static void main(String[] args) {
-        Node node1 = new Node(1);
-
-
-        Node node2 = null;
-
-        new _25_MergeList().mergeRecursive(node1, node2).output();
-    }
+    
 }
