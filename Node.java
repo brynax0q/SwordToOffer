@@ -44,4 +44,17 @@ public class Node {
         return start;
     }
 
+    public void output() {
+        Node p = this;
+
+        while (p != null) {
+            System.out.print(p.value);
+            System.out.print("->");
+            p = p.next;
+        }
+        System.out.println("null");
+
+
+    }
+
 }
