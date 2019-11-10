@@ -4,7 +4,6 @@ package swordtooffer;
  * 连续子数组的最大和
  */
 public class _42_FindGrestestSum {
-
     public int findGreatestSum(int[] nums) {
         if (nums == null || nums.length == 0) {
             return 0;
@@ -24,5 +23,4 @@ public class _42_FindGrestestSum {
         }
         return res;
     }
-
 }
