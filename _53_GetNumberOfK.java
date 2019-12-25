@@ -2,8 +2,32 @@ package swordtooffer;
 
 /**
  * @Description 在排序数组中查找k出现次数
+ * 0～n-1中缺失的数字
  */
 public class _53_GetNumberOfK {
+    // 利用二分思路寻找0～n-1中确实的数字
+    public static int getMissingNumber(int[] arr) {
+        if (arr == null || arr.length == 0) {
+            return -1;
+        }
+        int l = 0;
+        int r = arr.length - 1;
+        int missNumber = -1;
+        while (l <= r) {
+            int mid = l + ((r - l) >> 1);
+            if (arr[mid] != mid) {
+                if (mid == 0 || arr[mid - 1] == mid - 1) {
+                    missNumber = mid;
+                    break;
+                }
+                r = mid - 1;
+
+            } else {
+                l = mid + 1;
+            }
+        }
+        return missNumber;
+    }
 
     //巧用二分 logn
     public static int getNumberOfk1(int[] arr, int k) {
@@ -14,7 +38,7 @@ public class _53_GetNumberOfK {
         int last = getLastK(arr, k);
         if (first != -1 && last != -1) {
             return last - first + 1;
-        }else{
+        } else {
             return 0;
         }
     }
