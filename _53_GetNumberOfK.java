@@ -5,7 +5,7 @@ package swordtooffer;
  */
 public class _53_GetNumberOfK {
 
-    //巧用二分
+    //巧用二分 logn
     public static int getNumberOfk1(int[] arr, int k) {
         if (arr == null || arr.length == 0) {
             return 0;
