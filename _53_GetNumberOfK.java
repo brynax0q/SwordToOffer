@@ -1,8 +1,10 @@
 package swordtooffer;
 
 /**
- * @Description 在排序数组中查找k出现次数
+ * @Description
+ * 在排序数组中查找k出现次数
  * 0～n-1中缺失的数字
+ * 寻找排序数组中值和下标相等的元素
  */
 public class _53_GetNumberOfK {
     // 利用二分思路寻找0～n-1中确实的数字
