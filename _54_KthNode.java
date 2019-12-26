@@ -29,11 +29,4 @@ public class _54_KthNode {
         }
         return target;
     }
-
-    public static void main(String[] args) {
-        int[] preOrder = {5, 3, 2, 4, 7, 6, 8};
-        int[] inOrder = {2, 3, 4, 5, 6, 7, 8};
-        TreeNode root = new _7_ConstructTree().construct(preOrder, inOrder);
-        System.out.println(kThNode(root, 3).value);
-    }
 }
