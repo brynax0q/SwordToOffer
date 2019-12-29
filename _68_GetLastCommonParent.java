@@ -45,18 +45,15 @@ public class _68_GetLastCommonParent {
 
     // 当作两个单链表，寻找最后一个公共节点
     private static TreeNode getCommonParent(List<TreeNode> path1, List<TreeNode> path2) {
-        int index1 = path1.size() - 1;
-        int index2 = path2.size() - 1;
-        int diff = Math.abs(index1 - index2);
-        if (path1.size() > path2.size()) {
-            index1 -= diff;
-        }else{
-            index2 -= diff;
+        TreeNode lastCommonNode = null;
+        int index1 = 0;
+        int index2 = 0;
+
+        while (path1.get(index1) == path2.get(index2)) {
+            lastCommonNode = path1.get(index1);
+            index1++;
+            index2++;
         }
-        while (path1.get(index1) != path2.get(index2)) {
-            index1--;
-            index2--;
-        }
-        return path1.get(index1);
+        return lastCommonNode;
     }
 }
