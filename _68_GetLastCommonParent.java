@@ -49,7 +49,7 @@ public class _68_GetLastCommonParent {
         int index1 = 0;
         int index2 = 0;
 
-        while (path1.get(index1) == path2.get(index2)) {
+        while (index1 < path1.size() && index2 < path2.size() && path1.get(index1) == path2.get(index2)) {
             lastCommonNode = path1.get(index1);
             index1++;
             index2++;
